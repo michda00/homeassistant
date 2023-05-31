@@ -13,3 +13,9 @@ scene: !include scenes.yaml
 spotcast:
     sp_dc: !secret sp_dc
     sp_key: !secret sp_key
+
+github:
+  - platform: github
+    access_token: !secret github_token
+    repositories:
+      - path: 'michda00/homeassistant'
