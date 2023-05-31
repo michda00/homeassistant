@@ -1,0 +1,39 @@
+- id: '1685223173009'
+  alias: Close Shades on Daytime TV On
+  description: Closes the blinds in the living room when the TV is switched on
+  trigger:
+  - platform: device
+    device_id: 5332ce697238b6c8a01375ce35697968
+    domain: media_player
+    entity_id: media_player.lg_webos_smart_tv
+    type: turned_on
+  condition:
+  - condition: sun
+    before: sunset
+    after: sunrise
+  action:
+  - service: cover.close_cover
+    data: {}
+    target:
+      area_id: living_room
+  mode: single
+- id: '1685226286370'
+  alias: Activate Movie Night on Nighttime TV On
+  description: Activates the scene movie night when the TV is switched on during nighttime
+  trigger:
+  - platform: device
+    device_id: 5332ce697238b6c8a01375ce35697968
+    domain: media_player
+    entity_id: media_player.lg_webos_smart_tv
+    type: turned_on
+  condition:
+  - condition: sun
+    before: sunrise
+    after: sunset
+  action:
+  - service: scene.turn_on
+    data:
+      transition: 10
+    target:
+      entity_id: scene.movie_night
+  mode: single

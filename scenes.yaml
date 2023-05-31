@@ -1,0 +1,491 @@
+- id: '1685223751704'
+  name: Lights On
+  entities:
+    light.floor_lamp_1:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Floor Lamp 1
+      supported_features: 32
+      color_mode: hs
+      brightness: 76
+      hs_color:
+      - 50
+      - 100
+      rgb_color:
+      - 255
+      - 212
+      - 0
+      xy_color:
+      - 0.498
+      - 0.471
+      state: 'on'
+    light.floor_lamp_2:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Floor Lamp 2
+      supported_features: 32
+      color_mode: hs
+      brightness: 76
+      hs_color:
+      - 50
+      - 100
+      rgb_color:
+      - 255
+      - 212
+      - 0
+      xy_color:
+      - 0.498
+      - 0.471
+      state: 'on'
+    light.chandelier:
+      supported_color_modes:
+      - brightness
+      color_mode: brightness
+      brightness: 191
+      friendly_name: Chandelier
+      supported_features: 32
+      state: 'on'
+    light.controller_rgbw_ea9e95:
+      effect_list:
+      - blue_fade
+      - blue_strobe
+      - colorjump
+      - colorloop
+      - colorstrobe
+      - cyan_fade
+      - cyan_strobe
+      - cycle_rgb
+      - cycle_seven_colors
+      - gb_cross_fade
+      - green_fade
+      - green_strobe
+      - purple_fade
+      - purple_strobe
+      - rb_cross_fade
+      - red_fade
+      - red_strobe
+      - rg_cross_fade
+      - rgb_cross_fade
+      - white_fade
+      - white_strobe
+      - yellow_fade
+      - yellow_strobe
+      - random
+      supported_color_modes:
+      - rgb
+      - white
+      ip_address: 192.168.0.227
+      friendly_name: Shelf Lights
+      supported_features: 36
+      color_mode: white
+      brightness: 18
+      state: 'on'
+    number.controller_rgbw_ea9e95_effect_speed:
+      min: 1
+      max: 100
+      step: 1
+      mode: slider
+      ip_address: 192.168.0.227
+      icon: mdi:speedometer
+      friendly_name: Shelf Lights Effect Speed
+      state: '64'
+  icon: mdi:lightbulb-on
+  metadata: {}
+- id: '1685223896172'
+  name: Movie Night
+  entities:
+    light.kitchen_down_light:
+      supported_color_modes:
+      - brightness
+      friendly_name: Kitchen Down Light
+      supported_features: 32
+      state: 'off'
+    light.chandelier:
+      supported_color_modes:
+      - brightness
+      friendly_name: Chandelier
+      supported_features: 32
+      state: 'off'
+    light.recess_light_1_2:
+      supported_color_modes:
+      - brightness
+      friendly_name: Recess Light 1
+      supported_features: 32
+      state: 'off'
+    light.recess_light_2:
+      supported_color_modes:
+      - brightness
+      friendly_name: Recess Light 2
+      supported_features: 32
+      state: 'off'
+    light.controller_rgbw_ea9e95:
+      effect_list:
+      - blue_fade
+      - blue_strobe
+      - colorjump
+      - colorloop
+      - colorstrobe
+      - cyan_fade
+      - cyan_strobe
+      - cycle_rgb
+      - cycle_seven_colors
+      - gb_cross_fade
+      - green_fade
+      - green_strobe
+      - purple_fade
+      - purple_strobe
+      - rb_cross_fade
+      - red_fade
+      - red_strobe
+      - rg_cross_fade
+      - rgb_cross_fade
+      - white_fade
+      - white_strobe
+      - yellow_fade
+      - yellow_strobe
+      - random
+      supported_color_modes:
+      - rgb
+      - white
+      ip_address: 192.168.0.227
+      friendly_name: Shelf Lights
+      supported_features: 36
+      color_mode: white
+      brightness: 13
+      state: 'on'
+    number.controller_rgbw_ea9e95_effect_speed:
+      min: 1
+      max: 100
+      step: 1
+      mode: slider
+      ip_address: 192.168.0.227
+      icon: mdi:speedometer
+      friendly_name: Shelf Lights Effect Speed
+      state: '64'
+    light.floor_lamp_1:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Floor Lamp 1
+      supported_features: 32
+      color_mode: hs
+      brightness: 51
+      hs_color:
+      - 50
+      - 100
+      rgb_color:
+      - 255
+      - 212
+      - 0
+      xy_color:
+      - 0.498
+      - 0.471
+      state: 'on'
+    light.floor_lamp_2:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Floor Lamp 2
+      supported_features: 32
+      color_mode: hs
+      brightness: 51
+      hs_color:
+      - 50
+      - 100
+      rgb_color:
+      - 255
+      - 212
+      - 0
+      xy_color:
+      - 0.498
+      - 0.471
+      state: 'on'
+  icon: mdi:lightbulb-on-50
+  metadata: {}
+- id: '1685225594538'
+  name: Lights Off
+  entities:
+    light.bedroom_light_switch:
+      supported_color_modes:
+      - brightness
+      friendly_name: Bedroom Light Switch
+      supported_features: 32
+      state: 'off'
+    light.nightstand_light_1:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bedside Light 1
+      supported_features: 32
+      state: 'off'
+    light.nightstand_light_2:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bedside Light 2
+      supported_features: 32
+      state: 'off'
+    light.kitchen_down_light:
+      supported_color_modes:
+      - brightness
+      friendly_name: Kitchen Down Light
+      supported_features: 32
+      state: 'off'
+    light.chandelier:
+      supported_color_modes:
+      - brightness
+      friendly_name: Chandelier
+      supported_features: 32
+      state: 'off'
+    light.recess_light_1_2:
+      supported_color_modes:
+      - brightness
+      friendly_name: Recess Light 1
+      supported_features: 32
+      state: 'off'
+    light.recess_light_2:
+      supported_color_modes:
+      - brightness
+      friendly_name: Recess Light 2
+      supported_features: 32
+      state: 'off'
+    light.floor_lamp_1:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Floor Lamp 1
+      supported_features: 32
+      state: 'off'
+    light.floor_lamp_2:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Floor Lamp 2
+      supported_features: 32
+      state: 'off'
+    light.controller_rgbw_ea9e95:
+      effect_list:
+      - blue_fade
+      - blue_strobe
+      - colorjump
+      - colorloop
+      - colorstrobe
+      - cyan_fade
+      - cyan_strobe
+      - cycle_rgb
+      - cycle_seven_colors
+      - gb_cross_fade
+      - green_fade
+      - green_strobe
+      - purple_fade
+      - purple_strobe
+      - rb_cross_fade
+      - red_fade
+      - red_strobe
+      - rg_cross_fade
+      - rgb_cross_fade
+      - white_fade
+      - white_strobe
+      - yellow_fade
+      - yellow_strobe
+      - random
+      supported_color_modes:
+      - rgb
+      - white
+      ip_address: 192.168.0.227
+      friendly_name: Shelf Lights
+      supported_features: 36
+      state: 'off'
+    number.controller_rgbw_ea9e95_effect_speed:
+      min: 1
+      max: 100
+      step: 1
+      mode: slider
+      ip_address: 192.168.0.227
+      icon: mdi:speedometer
+      friendly_name: Shelf Lights Effect Speed
+      state: '64'
+  icon: mdi:lightbulb-off
+  metadata: {}
+- id: '1685246291743'
+  name: Bedtime
+  entities:
+    light.floor_lamp_1:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Floor Lamp 1
+      supported_features: 32
+      state: 'off'
+    light.floor_lamp_2:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Floor Lamp 2
+      supported_features: 32
+      state: 'off'
+    light.nightstand_light_1:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 15
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      friendly_name: Bedside Light 1
+      supported_features: 32
+      state: 'on'
+    light.nightstand_light_2:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 18
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      friendly_name: Bedside Light 2
+      supported_features: 32
+      state: 'on'
+    light.chandelier:
+      supported_color_modes:
+      - brightness
+      friendly_name: Chandelier
+      supported_features: 32
+      state: 'off'
+    light.recess_light_1_2:
+      supported_color_modes:
+      - brightness
+      friendly_name: Recess Light 1
+      supported_features: 32
+      state: 'off'
+    light.recess_light_2:
+      supported_color_modes:
+      - brightness
+      friendly_name: Recess Light 2
+      supported_features: 32
+      state: 'off'
+    light.controller_rgbw_ea9e95:
+      effect_list:
+      - blue_fade
+      - blue_strobe
+      - colorjump
+      - colorloop
+      - colorstrobe
+      - cyan_fade
+      - cyan_strobe
+      - cycle_rgb
+      - cycle_seven_colors
+      - gb_cross_fade
+      - green_fade
+      - green_strobe
+      - purple_fade
+      - purple_strobe
+      - rb_cross_fade
+      - red_fade
+      - red_strobe
+      - rg_cross_fade
+      - rgb_cross_fade
+      - white_fade
+      - white_strobe
+      - yellow_fade
+      - yellow_strobe
+      - random
+      supported_color_modes:
+      - rgb
+      - white
+      ip_address: 192.168.0.227
+      friendly_name: Shelf Lights
+      supported_features: 36
+      state: 'off'
+    number.controller_rgbw_ea9e95_effect_speed:
+      min: 1
+      max: 100
+      step: 1
+      mode: slider
+      ip_address: 192.168.0.227
+      icon: mdi:speedometer
+      friendly_name: Shelf Lights Effect Speed
+      state: '64'
+  metadata: {}

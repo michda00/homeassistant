@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<aircast>
+<common>
+<enabled>1</enabled>
+<stop_receiver>0</stop_receiver>
+<media_volume>1.0000</media_volume>
+<latency></latency>
+<codec>flac</codec>
+<artwork></artwork>
+<drift>0</drift>
+<metadata>1</metadata>
+<flush>1</flush>
+</common>
+<main_log>info</main_log>
+<cast_log>info</cast_log>
+<util_log>warn</util_log>
+<log_limit>-1</log_limit>
+<max_players>32</max_players>
+<ports>0:0</ports>
+<binding>?</binding>
+<device>
+<udn>420edd01d2f439092f20a18e23b94bf1</udn>
+<name>Gym speaker+</name>
+<mac>cc:cc:44:be:1a:d7</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>9b222f158372715524de1648d4d4dbf8</udn>
+<name>Master Bathroom+</name>
+<mac>cc:cc:3e:8e:4f:4a</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>8F7A949A-3BA4-426B-A21E-100BAB07AAD0</udn>
+<name>Master Bed and Bathroom Speakers+</name>
+<mac>cc:cc:5a:26:3e:16</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>b417e215ed459db5d397dfba8e9de766</udn>
+<name>Bedroom TV+</name>
+<mac>cc:cc:7c:ac:4b:c6</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>849c9c339892a11d52efec1ea39f0c8d</udn>
+<name>Master Bedroom speaker+</name>
+<mac>cc:cc:24:c1:f7:c5</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>07fd356ad4ce1bbe6930b8967176891d</udn>
+<name>Kitchen speaker+</name>
+<mac>cc:cc:25:42:58:a1</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>338412D9-D4F9-4F17-B845-D28F315D95C3</udn>
+<name>Downstairs speakers+</name>
+<mac>cc:cc:fc:13:60:6c</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>B0A6ECBE-AE1B-4028-A21E-629491E3D1F7</udn>
+<name>All speakers+</name>
+<mac>cc:cc:aa:93:f5:ce</mac>
+<enabled>1</enabled>
+</device>
+</aircast>

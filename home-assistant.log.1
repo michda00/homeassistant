@@ -1,0 +1,34 @@
+2023-05-30 21:20:23.851 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2023-05-30 21:20:26.673 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2023-05-30 21:20:26.814 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=4 from 2023-05-30 02:34:31.213846)
+2023-05-30 21:20:38.977 WARNING (zeroconf-ServiceBrowser-_googlecast._tcp-104) [pychromecast.dial] Failed to determine cast type for host <unknown> (<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1007)>) (services:{ServiceInfo(type='mdns', data='Klipsch-The-Three-420edd01d2f439092f20a18e23b94bf1._googlecast._tcp.local.')})
+2023-05-30 21:25:12.086 ERROR (MainThread) [homeassistant.core] Error executing service: <ServiceCall update.install (c:01H1QPGTECDRQYY2P64G9G3WVQ): entity_id=['update.home_assistant_operating_system_update'], version=10.2, backup=False>
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/hassio/update.py", line 212, in async_install
+    await async_update_os(self.hass, version)
+  File "/usr/src/homeassistant/homeassistant/components/hassio/handler.py", line 52, in _wrapper
+    raise HassioAPIError(data["message"])
+homeassistant.components.hassio.handler.HassioAPIError: Can't fetch OTA update from https://github.com/home-assistant/operating-system/releases/download/10.2/haos_ova-10.2.raucb: Response payload is not completed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1867, in catch_exceptions
+    await coro_or_task
+  File "/usr/src/homeassistant/homeassistant/core.py", line 1889, in _execute_service
+    await cast(Callable[[ServiceCall], Awaitable[None]], handler.job.target)(
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_component.py", line 226, in handle_service
+    await service.entity_service_call(
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 798, in entity_service_call
+    future.result()  # pop exception if have
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 980, in async_request_call
+    await coro
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 838, in _handle_entity_call
+    await result
+  File "/usr/src/homeassistant/homeassistant/components/update/__init__.py", line 156, in async_install
+    await entity.async_install_with_progress(version, backup)
+  File "/usr/src/homeassistant/homeassistant/components/update/__init__.py", line 417, in async_install_with_progress
+    await self.async_install(version, backup)
+  File "/usr/src/homeassistant/homeassistant/components/hassio/update.py", line 214, in async_install
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Error updating Home Assistant Operating System: Can't fetch OTA update from https://github.com/home-assistant/operating-system/releases/download/10.2/haos_ova-10.2.raucb: Response payload is not completed
